@@ -1,8 +1,9 @@
-/* cowpy - LGPL Copyright 2016 - pancake@nowsecure.com */
-/*                                                    */
-/* cp-like tool exploiting the dirtycow vulnerability */
+/* cowpy - LGPL Copyright 2016-2017 - pancake@nowsecure.com */
+/*                                                          */
+/* cp-like tool exploiting the dirtycow vulnerability       */
 
-static int LOOPS = 10000;
+#include "os-barrier.h"
+static int LOOPS = 50000;
 #include "exploit.c"
 
 #define R_MIN(x,y) (((x)>(y))?(y):(x))
